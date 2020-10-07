@@ -1,7 +1,10 @@
 require 'pry'
 require_relative './account'
 
-eric = Account.new('eric',0,'checking')
+eric = Account.new('eric',1000,1)
+alex = Account.new('alex',5000,3)
+
+alex.print_balance
 
 binding.pry
 

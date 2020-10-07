@@ -2,23 +2,23 @@
 
 ## Learning Objectives
 
-* Define `object` in programming domain
-* Explain the difference between a class and an instance
-* Explain the concept of sending messages
-* Create a class and instantiate an instance of the class
-* Pass arguments to `new` by defining an initialize method in class
-* Create instance methods
-* Call methods on the implicit or explicit `self`
-* Define attribute readers and writers using `attr_` macros
-* Get more practice with array compositions (`each`, `map`, `select`/`filter`)
-* Explain the need for variable scope and why it's important to not utilize global variables
+- [x] Define `object` in programming domain
+- [x] Explain the difference between a class and an instance
+- [x] Explain the concept of sending messages
+- [x] Create a class and instantiate an instance of the class
+- [x] Pass arguments to `new` by defining an initialize method in class
+- [x] Define attribute readers and writers using `attr_` macros
+- [x] Create instance methods
+- [x] Explain the need for variable scope and why it's important to not utilize global variables
+- [ ] Call methods on the implicit or explicit `self`
+- [ ] Determining execution context - are we "inside" or "outside" an object?
+- [ ] Get more practice with array compositions (`each`, `map`, `select`/`filter`)
 
 ## Additional Objectives
-* Gaining some intuition for the phrase "Everything is an object"
-* Explain the differences between classes and objects
-* Understand the difference between local variable and instance variable scope
-* Know what method dispatch is and how it works
-* Determining execution context - are we "inside" or "outside" an object?
+- [x] Gaining some intuition for the phrase "Everything is an object"
+- [x] Explain the differences between classes and objects
+- [x] Understand the difference between local variable and instance variable scope
+- [x] Know what method dispatch is and how it works
 
 ## Notes
 - Whiteboard exercise  
@@ -108,8 +108,7 @@ bank_account = {"user_id": 3, "balance": 100}
 
 Write an implementation of a bank account that meets the following requirements:
 
-* can print the balance of the account
-* can deposit money into the account
-* can withdraw money from the account
-* keeps track of the account number
-* keeps track of the customer id of the account
+- [ ] can print the balance of the account
+- [ ] can deposit money into the account
+- [ ] can withdraw money from the account
+- [ ] keeps track of the account number
