@@ -1,0 +1,6 @@
+<h1> <%= @book.title %> </h1>
+
+<img src='<%= @book.img_url %>' alt="" />
+
+<p>Author: <%= link_to "#{@book.author.name}", author_path(@book.author) %> </p>
+<p>About the author: <%= @book.author.bio %> </p>

@@ -1,0 +1,9 @@
+<h1> Edit a book </h1>
+
+<%= form_for @book, method: :patch do |f| %>
+  Title: <%= f.text_field :title %> <br />
+  Image: <%= f.text_field :img_url %> <br />
+  Author: <%= f.collection_select :author_id, Author.all, :id, :name %>
+
+  <%= f.submit %>
+<% end %>

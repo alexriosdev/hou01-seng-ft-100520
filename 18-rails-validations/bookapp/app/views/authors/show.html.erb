@@ -1,0 +1,18 @@
+<h1> <%= @author.name %> </h1>
+
+<p>Bio: <%= @author.bio %> </p>
+
+<% @author.books.each do |book| %>
+  <li>
+    <%= link_to "#{book.title}", book_path(book) %>
+  </li>
+<% end %>
+<br />
+<br />
+<br />
+
+<%= link_to "Back", authors_path %>
+
+<%= link_to "Edit", edit_author_path(@author) %>
+
+<%= link_to "Delete", author_path(@author), method: :delete %>
