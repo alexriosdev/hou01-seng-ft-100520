@@ -1,0 +1,24 @@
+<% if flash[:errors] %>
+  <h2> Note: Something went Wrong!! </h2>
+  <ul style="color: red">
+    <% flash[:errors].each do |k,v| %>
+      <li>
+        <%= "#{k} #{v[0]}" %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @employee do |f| %>
+
+  First Name: <%= f.text_field :first_name %> <br /><br />
+  Last Name: <%= f.text_field :last_name %> <br /><br />
+  Alias: <%= f.text_field :alias %> <br /><br />
+  Title: <%= f.text_field :title %> <br /><br />
+  Office: <%= f.text_field :office %> <br /><br />
+  Image: <%= f.text_field :img_url %> <br /><br />
+
+  <%= f.collection_select :dog_id, Dog.all, :id, :name %> <br /><br />
+
+  <%= f.submit %>
+<% end %>
