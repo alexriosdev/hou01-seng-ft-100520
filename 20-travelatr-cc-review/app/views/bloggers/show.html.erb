@@ -1,0 +1,10 @@
+<h1> <%= @blogger.name %> </h1>
+
+<h4> Total Likes: <%= @likes %> ♥️ </h4>
+
+<h3> Featured Post: </h3>
+<% if @featured_post %>
+  <%= link_to @featured_post.title, "/posts/#{@featured_post.id}" %>
+<% else %>
+  <p> This blogger has no posts yet! </p>
+<% end %>

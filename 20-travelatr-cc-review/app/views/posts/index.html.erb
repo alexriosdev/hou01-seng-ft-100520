@@ -1,0 +1,9 @@
+<h1> List of Posts </h1>
+
+<ol>
+  <% @posts.each do |post| %>
+    <li>
+      <%= link_to post.title, "/posts/#{post.id}" %>
+    </li>
+  <% end %>
+</ol>

@@ -1,0 +1,9 @@
+<h1> List of Destinations </h1>
+
+<ol>
+  <% @destinations.each do |destination| %>
+    <li>
+      <%= link_to destination.name, "/destinations/#{destination.id}" %>
+    </li>
+  <% end %>
+</ol>

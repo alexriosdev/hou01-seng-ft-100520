@@ -1,0 +1,14 @@
+<h1> <%= @post.title %> </h1>
+
+<h4> Content: </h4>
+<p> <%= @post.content %> </p>
+
+<h4> Author: </h4>
+<p> <%= link_to @post.blogger.name, "/bloggers/#{@post.blogger.id}" %> </p>
+
+<h4> Destination: </h4>
+<p> <%= link_to @post.destination.name, "/destinations/#{@post.destination.id}" %> </p>
+
+<h4> Likes: <%= @post.likes %> </h4>
+
+<%= button_to "Like", "/posts/#{@post.id}", method: :patch %>
