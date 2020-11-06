@@ -1,0 +1,13 @@
+<% if current_author %>
+  <h1> Welcome, <%= current_author.name %> </h1>
+<% end %>
+
+<h2> List of all the books </h2>
+
+<ol>
+  <% @books.each do |book| %>
+    <li>
+      <%= link_to "#{book.title}", book_path(book) %>
+    </li>
+  <% end %>
+</ol>

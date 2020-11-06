@@ -1,0 +1,19 @@
+<% if flash[:errors] %>
+  <div style='color: red'>
+    <h1>An error occured!</h1>
+    <ul>
+      <% flash[:errors].each do |key,val| %>
+        <li> <%= "#{key}" " #{val[0]}" %> </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+<h1> Create new authors </h1>
+
+<%= form_for @author, method: :post do |f| %>
+  Name: <%= f.text_field :name %> <br />
+  Bio : <%= f.text_field :bio %> <br />
+  <%= f.submit %>
+<% end %>

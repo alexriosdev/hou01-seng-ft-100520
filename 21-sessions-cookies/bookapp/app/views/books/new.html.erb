@@ -1,0 +1,19 @@
+<h1> Create new book </h1>
+
+<% if flash[:errors] %>
+  <div style='color: red'>
+    <h1>An error occured!</h1>
+    <ul>
+      <% flash[:errors].each do |err| %>
+        <li> <%= err %> </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @book, method: :post do |f| %>
+  Title: <%= f.text_field :title %> <br />
+  Image: <%= f.text_field :img_url %> <br />
+
+  <%= f.submit %>
+<% end %>
