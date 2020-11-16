@@ -1,4 +1,5 @@
-# def print_name
-#   person = 'Tom'
-#   puts person
-# end
+hello_world
+
+def hello_world
+  puts "Hello World"
+end

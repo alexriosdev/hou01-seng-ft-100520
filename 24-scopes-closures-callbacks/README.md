@@ -9,7 +9,7 @@
 - Variable scope in Ruby:
 
 ```ruby
-name = 'Tom'
+name = 'Steven'
 
 def say_name
   puts name
@@ -22,7 +22,7 @@ say_name # what will happen 🤔
 - However, if we make the variable global, or pass it in as an argument the code above will work:
 
 ```ruby
-$name = 'Tom' #global vars in ruby are declared w/ $
+$name = 'Steven' #global vars in ruby are declared w/ $
 
 def say_name
   puts $name
@@ -33,7 +33,7 @@ say_name # what will happen 🤔
 
 ```ruby
 # WORKS!
-name = 'Tom'
+name = 'Steven'
 
 def say_name(name_arg)
   puts name_arg
@@ -77,7 +77,7 @@ console.log(name) // ?
 - Furthermore, JavaScript will look at (resolve) the most local scope before looking up:
 
 ```javascript
-var name = 'Tom' //global var
+var name = 'Steven' //global var
 
 function sayName() {
   var name = 'garry' // local to sayName
