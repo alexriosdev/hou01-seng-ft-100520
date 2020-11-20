@@ -1,0 +1,429 @@
+body {
+  background-color: #EFF7FF;
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  padding-top: 10px;
+
+  height: 50px;
+  width: 100%;
+
+  background-color: white;
+}
+
+.header-search-bar {
+  display: flex;
+  width: 100%;
+}
+
+.post-search {
+  width: 70%;
+  margin-left: 200px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-search input:hover {
+  border: 1px solid #0077D6;
+  background-color: white;
+}
+
+.post-search input {
+  border: none;
+  border-radius: 5px;
+
+  height: 40px;
+  width: 75%;
+
+  outline: none;
+  padding-left: 30px;
+
+  font-size: 18px;
+  font-family: sans-serif;
+  color: grey;
+  font-weight: lighter;
+
+  background-color: #EFEFED;
+}
+
+.login-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-buttons button {
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 600;
+
+  height: 40px;
+  width: 140px;
+
+  margin-left: 10px;
+
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#login {
+  background-color: white;
+  color: #0077D6;
+
+  border: 1px solid #0077D6;
+  border-radius: 5px;
+}
+
+#signup {
+  background-color: #0077D6;
+  color: white;
+
+  border: 1px solid #0077D6;
+  border-radius: 5px;
+}
+
+#profile {
+  background-color: white;
+  color: #0077D6;
+}
+
+.header-icon img {
+  height: 40px;
+  align-self: flex-start;
+  width: auto;
+}
+
+/* Main Content Styling */
+
+.content {
+
+  height: 100%;
+  width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-content: center;
+
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+}
+
+.content span {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: #336699;
+}
+
+.trending-content {
+  margin-top: 25px;
+  height: 210px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.trending-content-card {
+  background-color: white;
+
+  height: 90%;
+  width: 290px;
+
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('https://static.wikia.nocookie.net/disney/images/9/99/Mickey_Mouse_Disney_3.jpeg/revision/latest/top-crop/width/360/height/360?cb=20190305233033');
+  background-position: center;
+  background-size: cover;
+}
+
+.card-overlay {
+  height: 100%;
+  width: 100%;
+
+  border-radius: 10px;
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+
+  color: white;
+  background-color: rgba(0,0,0,0.6);
+
+  font-family: sans-serif;
+  font-size: 20px;
+
+  padding: 10px;
+}
+
+.card-overlay a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Content columns */
+.content-column-parent {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.post-feed {
+  border-radius: 10px;
+
+  height: 600px;
+  width: 70%;
+}
+
+/* Feed CSS */
+.feed-menu-bar {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: flex-start;
+  align-content: space-around;
+
+  height: 80px;
+  border-radius: 10px;
+
+  background-color: white;
+}
+
+.feed-menu-bar:hover {
+  border: 1px solid grey;
+}
+
+.feed-menu-bar button {
+  height: 40px;
+  min-width: 90px;
+
+  padding: 20px;
+  margin: 10px;
+
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+
+  cursor: pointer;
+  color: #0077D6;
+  outline: none;
+
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-card {
+  background-color: white;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  padding-bottom: 1px;
+}
+
+.post-card:hover {
+  border: 1px solid grey;
+}
+
+.likes-bar {
+  background-color: #EFEFED;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  width: 70px;
+}
+
+.likes-bar span {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.likes-bar button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  padding: 10px;
+}
+
+.post-card-title-parent {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 10px;
+}
+
+.post-card-info {
+}
+
+.post-card-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  color: black;
+
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.post-card-info span {
+  color: #545452;
+
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.post-card-title-parent img {
+  align-self: center;
+  width: 70%;
+}
+
+.post-card-title-parent a {
+  text-decoration: none;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-family: sans-serif;
+
+  color: #0077D6;
+  outline: none;
+}
+
+.post-card-title-parent a:hover {
+  text-decoration: underline;
+}
+
+#userinfo {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: grey;
+  font-weight: lighter;
+}
+
+#userinfo:hover, #forum-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Sidebar */
+
+.side-bar {
+  background-color: white;
+  border-radius: 10px;
+
+  height: 100%;
+  width: 28%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.bar-title {
+  display: flex;
+  border-radius: 10px;
+
+  padding-left: 20px;
+  padding-bottom: 10px;
+
+  align-items: flex-end;
+  height: 80px;
+
+  font-size: 20px;
+  font-family: sans-serif;
+
+  /* background-color: #0077D6; */
+  background: url("https://pbs.twimg.com/media/ER0AQagU8AAUjHM.jpg");
+  background-position: center;
+  color: white;
+}
+
+.communities-list {
+  list-style-type: none;
+
+  font-size: 18px;
+  font-family: sans-serif;
+
+  margin: 0px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.communities-list li {
+  display: flex;
+  align-items: center;
+  height: 60px;
+
+  border-bottom: 1px solid #EFEFED;
+}
+
+.view-all-btn {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  height: 40px;
+  width: 90%;
+
+  background-color: #0077D6;
+  color: white;
+
+  border: 1px solid #0077D6;
+  border-radius: 5px;
+
+  cursor: pointer;
+  margin-bottom: 20px;
+
+  outline: none;
+}
+
+.view-all-btn:hover {
+  color: #0077D6;
+  background-color: white;
+}
