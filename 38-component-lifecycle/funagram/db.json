@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "img": "https://www.hillspet.com/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/new-pet-parent/images/golden-retriever-puppy-running-outside.jpg",
+      "likes": 110
+    },
+    {
+      "id": 2,
+      "img": "https://www.dogtime.com/assets/uploads/2018/10/puppies-cover-1280x720.jpg",
+      "likes": 44
+    },
+    {
+      "id": 3,
+      "img": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12231413/Labrador-Retriever-MP.jpg",
+      "likes": 39
+    }
+  ]
+}
