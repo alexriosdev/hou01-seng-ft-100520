@@ -13,6 +13,7 @@ class App extends Component {
   }
 
   componentDidMount(){
+    // Checkout ./static/PizzaAdapter file first
     PizzaAdapter.getPizza()
     .then(pizzas => this.setState({ pizzas }))
   }
